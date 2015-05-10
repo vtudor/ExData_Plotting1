@@ -17,10 +17,10 @@ size <- c(2, 2)
 par(mfrow = size) 
 
 plot(dt, GAP, type="l", xlab="", ylab="Global Active Power")
-plot(dt, vlt, type="l", xlab="datetime", ylab="Voltage")
+plot(dt, volt, type="l", xlab="datetime", ylab="Voltage")
 
 plot(dt, sM1, type="l", xlab="", ylab="Energy Submetering")
-#legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"))
 lines(dt, sM2, type="l", col="red")
 lines(dt, sM3, type="l", col="blue")
 plot(dt, GRP, type="l", xlab="datetime", ylab="Global_reactive_power")
